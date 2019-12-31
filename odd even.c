@@ -1,7 +1,5 @@
 
 
-// Opportunity for better design
-
 #include <stdio.h>
 
 int main( )
