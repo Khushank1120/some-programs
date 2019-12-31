@@ -1,3 +1,7 @@
+				
+
+
+					//generate prime numbers using arrays
 #include<stdio.h>
 
 int main()
@@ -14,12 +18,11 @@ int main()
 	{
 		for(int j=0;j<primeindex;j++)
 		{
-			if(i % primes[j] != 0)   //it will check if the no. are prime or not.
+			if(i % primes[j] != 0)  
 			{
-				if(j==primeindex-1)    //it will check for all previous prime numbers.
+				if(j==primeindex-1)   
 				{
 					primes[primeindex]=i;
-					printf("%3d",primes[primeindex]);
 					primeindex++;
 
 				}
@@ -32,5 +35,12 @@ int main()
 		}
 
 	}
+                	printf("prime number between 0 and 100 are:\n");
+                	
+	             for(int j=0;j<primeindex;j++)
+	               {
+	                   printf("%d ",primes[j]);
+	               }
+	                
 	return 0;
 }
