@@ -1,5 +1,8 @@
 #include<stdio.h>
 
+
+        // Just two functions one calculates gcd of two numbers and one absolute value
+
 float absoluteValue(float x)
 {
     if (x<0)
