@@ -2,6 +2,10 @@
 #include<stdlib.h>
 #include<time.h>
 
+
+        // a random number is created from 0 to 20 and you have 5 tries to guess it.
+
+
 int main()
 {
 
