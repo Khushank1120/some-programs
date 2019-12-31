@@ -1,5 +1,16 @@
 
 #include<stdio.h>
+
+            // enter no. of hours worked in a weak and it will calculate your net pay and tax.
+
+            //following assumptions are made
+            //basic pay rate=$12.00/hr
+            //Overtime(after 40 hours)=time and a half i.e 18 here
+            //tax rates:
+            //15% of first$300
+            //20% of next$150
+            //25% of the rest
+
 int main()
 {
     float hours,grosspay,netpay,tax;
