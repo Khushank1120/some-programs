@@ -2,7 +2,7 @@
 int main()
 {
     int t,n,que,score,max;
-
+    
     scanf("%d",&t);
     for(int i=0;i<t;i++)
     {
