@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-                                 //This creates a game of tic tac toe
+
 
 int main(void)
 {
@@ -21,7 +21,7 @@ int main(void)
 
 top:                  if(stop<=1)
                             {
-                            printf("\n\t\t\t\t\t\t tic tac toe\n\n");
+                            printf("\n\t\t\t\t\t\t\t    tic tac toe\n\n");
                             printf("player(X) 1  vs player(O) 2\n\n\n");
                             }
 
@@ -30,25 +30,27 @@ top:                  if(stop<=1)
 
                         for (int i=0;i<9;i++)                                         // for the printing of board. it will start here
                             {
-                            for(int j=0;j<20;j++)
+                            for(int j=0;j<74;j++)
                                 {
-                                if(j==6 || j==13)
-                                    {
+                                if(j==61 || j==67)
+                                {
                                     printf("|");
-                                    }
-                                else if(i==2 || i==5)
+                                }
+                                else if((i==2 || i==5) && (j>=56 && j<=72))
                                     {
                                     printf("_");
                                     }
                                 else if(i==1 || i==4 || i==7)
                                     {
-                                    if (j==2 || j==8 || j==14)
+                                    if (j==58 || j==64 || j==70)
                                         {
-                                        printf("   %c  ",board[count]);                //assignning value of x and o to board
+                                        printf("%c",board[count]);                //assignning value of x and o to board
                                         count++;
                                         }
-                                    }
                                 else
+                                    printf(" ");
+                                    }
+                                 else
                                 printf(" ");
                                 }
                                 printf("\n");
@@ -61,11 +63,12 @@ top:                  if(stop<=1)
                                                             //player 1
                                 if(k % 2 !=0)                                               // if k is even then player 1 turn
                                     {
+                                        system ("color 5a");                            //changes color of output screen.
                                         player1:                                                //goto of player1 will send it here
                                         printf("\nPlayer 1 enter the value:");
                                         scanf("%d",&chance1);
                                                                                                            //for taking value of players
-                                if(chance1<=0||chance1>9|| board[chance1-1] =='o'   || board[chance1-1]=='x')    //checks for invalid number entered by user
+                                if(chance1<=0||chance1>9 || (board[chance1-1] =='o'   || board[chance1-1]=='x'))    //checks for invalid number entered by user
                                     {
                                         printf("enter valid number");
                                         goto player1;
@@ -125,6 +128,7 @@ top:                  if(stop<=1)
                                                             // player 2
                                 else if(k % 2==0)
                                     {
+                                    system ("color 8a");                            //changes color of output screen.
                                     player2:
                                     printf("\nPlayer 2 enter the value:");
                                     scanf("%d",&chance2);
@@ -167,6 +171,7 @@ top:                  if(stop<=1)
                                         }
                                     }
                                 }
+
 
                                             else  if(k==9)   // will check until the element comes.
                                                     {
