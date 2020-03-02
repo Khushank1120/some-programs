@@ -32,16 +32,6 @@ int main()
 
 }
 
-
-
-
-
-
-
-
-
-
-
 //function3 checks if the player has won or match is draw
 void caseWin()
 {
