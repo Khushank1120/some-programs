@@ -31,12 +31,10 @@ int main()
         askValue();
 
 }
-
 //function3 checks if the player has won or match is draw
 void caseWin()
 {
                 win=false;              //initializing the boolean win to false
-
 
                                 if (((board[0]==board[1]) && (board[1]==board[2]))||((board[3]==board[4]) && (board[4]==board[5]))||((board[6]==board[7]) && (board[7]==board[8])))              //checks if 3 elements of row becomes same then player wins
                                     {
@@ -88,7 +86,6 @@ void caseWin()
                                                drawBoard();
                                            }
                                     }
-
                                            else  if(k==9)                       // it is for the condition of draw i.e if number of turns becomes 9 and no one is winner then draw.
                                                     {
                                                     win=true;
@@ -107,11 +104,6 @@ void caseWin()
 
 
 }
-
-
-
-
-
 //function2             // asks value from player and checks for invalid input.
 void askValue()
 {
@@ -120,7 +112,6 @@ void askValue()
                 srand((unsigned)time(&t));                      // for player vs pc
 
                 char chance2=rand()%9;
-
 
                                                                     //player 1
                                 if(k % 2 !=0)                                               // if k is even then player 1 turn
@@ -143,14 +134,11 @@ void askValue()
                                         }
 
 
-
                                                 // player 2
                                else if(k % 2==0)
                                     {
                                     printf("\nPlayer 2 enter the value:%d", chance2);
                                 //    scanf("%c",&chance2);
-
-
 
                                         if( chance2<=0|| chance2>9|| board[ chance2-1]=='x' ||   board[ chance2-1]=='o')
                                             {
@@ -169,7 +157,6 @@ void askValue()
                                     {
                                     askValue();
                                     }
-
 }
 
 //function 1   draws the board
