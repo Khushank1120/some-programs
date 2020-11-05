@@ -4,7 +4,6 @@
 #include <stdbool.h>
 
 
-
 int main(void)
 {
 
@@ -24,7 +23,6 @@ top:                  if(stop<=1)
                             printf("\n\t\t\t\t\t\t\t    tic tac toe\n\n");
                             printf("player(X) 1  vs player(O) 2\n\n\n");
                             }
-
 
             count=0;
 
@@ -55,7 +53,6 @@ top:                  if(stop<=1)
                                 }
                                 printf("\n");
                             }                                                                            // it will end  here.
-
 
 
                         if(stop<=1)                                                         // now input will be taken and conditions of win lose and draw will be check
@@ -124,7 +121,6 @@ top:                  if(stop<=1)
                                     }
                                 }
                             }
-
                                                             // player 2
                                 else if(k % 2==0)
                                     {
@@ -172,7 +168,6 @@ top:                  if(stop<=1)
                                     }
                                 }
 
-
                                             else  if(k==9)   // will check until the element comes.
                                                     {
                                                     win=true;
@@ -192,11 +187,3 @@ top:                  if(stop<=1)
                                         }
                                     }
                             }
-
-
-
-
-
-
-
-
